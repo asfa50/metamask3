@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+button {
+  font-size: 36px;
+  padding: 16px;
+  border-radius: 16px;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
