@@ -28,21 +28,21 @@ function App() {
     async function getBalance() {
         const balanceInWei = await web3.eth.getBalance(walletAddress);
         const balanceInEther = web3.utils.fromWei(balanceInWei, 'ether');
-        console.log(`${Number(balanceInEther)} Ether`);
+        console.log(`${Number(balanceInEther)} Ether `);
     }
 
     return (
-    <div className="App">
-      <header className="App-header">
-       <button
-       onClick={requestAccount}
-       >Connect Metamask Wallet</button>
-        <h3>Wallet Address: {walletAddress}</h3>
-          <button onClick={getBalance}>Get Account Balance</button>
-          <h2>Wallet Balance: {Number(balanceInEther)} </h2>
-      </header>
-    </div>
-  );
-}
-
+      return (
+        <div className="App">
+          <header className="App-header">
+           <button
+           onClick={requestAccount}
+           >Connect Metamask Wallet</button>
+            <h3>Wallet Address: {walletAddress}</h3>
+              <button onClick={getBalance}>Get Account Balance</button>
+              <h2>Wallet Balance: {Number(balanceInEther)} </h2>
+          </header>
+        </div>
+      );
+    }
 export default App;
