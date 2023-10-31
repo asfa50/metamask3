@@ -32,7 +32,6 @@ function App() {
     }
 
     return (
-      return (
         <div className="App">
           <header className="App-header">
            <button
